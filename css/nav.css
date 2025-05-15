@@ -3,8 +3,7 @@
     border-bottom: 1px solid black;
     align-items: center;
     justify-content: space-evenly;
-    h1{
-        text-transform:lowercase;
+    h1{ 
         font-size: 40px;
         color:rgb(88, 88, 200);
         span{
@@ -27,7 +26,7 @@
             }
           .col3{
                 color: rgb(84, 84, 221);
-                background-color: rgb(251, 48, 48);
+                background-color: rgb(52, 220, 173);
                 color: white;
                 border: 1px solid rgb(239, 70, 57);
             }
@@ -36,6 +35,12 @@
                 background-color: rgb(70, 181, 237);
                 color: white;
                 border: 1px solid rgb(71, 114, 187);
+            }
+             .col5{
+                color: rgb(84, 84, 221);
+                background-color: rgb(251, 48, 48);
+                color: white;
+                border: 1px solid rgb(239, 70, 57);
             }
             
         a{
