@@ -1,3 +1,16 @@
-/* .cocarousel-inner {
-  width: 85%;
-} */
+.carousel-inner {
+  height: 500px;
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel {
+  max-width: 800px;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
