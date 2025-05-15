@@ -31,6 +31,12 @@
                 color: white;
                 border: 1px solid rgb(239, 70, 57);
             }
+            .col4{
+                color: rgb(84, 84, 221);
+                background-color: rgb(70, 181, 237);
+                color: white;
+                border: 1px solid rgb(71, 114, 187);
+            }
             
         a{
             font-size: 20px;
