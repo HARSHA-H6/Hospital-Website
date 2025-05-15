@@ -3,8 +3,7 @@
     border-bottom: 1px solid black;
     align-items: center;
     justify-content: space-evenly;
-    h1{
-        text-transform:lowercase;
+    h1{ 
         font-size: 40px;
         color:rgb(88, 88, 200);
         span{
