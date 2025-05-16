@@ -2,113 +2,98 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Doctor Appointment Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hospital Appointment Form</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f2f7f8;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      background-image: url('https://tse3.mm.bing.net/th?id=OIP.o0w5b-moZhcPTStYzL8-pAHaEq&pid=Api&P=0&h=180');
+      
+      padding: 20px;
     }
 
-    .appointment-form {
-      background: #fff;
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background:pink;
       padding: 30px;
+      box-shadow: 0 4px 8px rgba(163, 19, 19, 0.1);
       border-radius: 10px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-      width: 100%;
-      max-width: 500px;
     }
 
-    .appointment-form h2 {
+    h2 {
       text-align: center;
-      color: #2c3e50;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
 
-    .form-group {
-      margin-bottom: 15px;
-    }
-
-    .form-group label {
-      display: block;
-      margin-bottom: 6px;
-      font-weight: bold;
-    }
-
-    .form-group input,
-    .form-group textarea,
-    .form-group select {
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="time"],
+    select,
+    textarea {
       width: 100%;
       padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
+      margin: 10px 0 20px;
+      border: 1px solid blanchedalmond;
+      border-radius: 5px;
     }
 
-    .form-group textarea {
-      resize: vertical;
-      height: 100px;
-    }
-
-    .form-group button {
-      width: 100%;
-      padding: 12px;
-      background-color: #27ae60;
+    button {
+      background-color: blue;
       color: white;
+      padding: 12px;
       border: none;
-      border-radius: 6px;
+      width: 100%;
+      border-radius: 5px;
       font-size: 16px;
-      cursor: pointer;
-      transition: background 0.3s;
     }
 
-    .form-group button:hover {
-      background-color: #219150;
+    button:hover {
+      background-color: black;
     }
   </style>
 </head>
 <body>
 
-  <form class="appointment-form">
-    <h2>Doctor Appointment</h2>
+<div class="container">
+  <h2>Hospital Appointment Form</h2>
+  <form action="/submit-appointment" method="post">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required>
 
-    <div class="form-group">
-      <label for="name">Full Name:</label>
-      <input type="text" id="name" placeholder="Your name" required>
-    </div>
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" required>
 
-    <div class="form-group">
-      <label for="email">Email Address:</label>
-      <input type="email" id="email" placeholder="Your email" required>
-    </div>
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email">
 
-    <div class="form-group">
-      <label for="phone">Phone Number:</label>
-      <input type="tel" id="phone" placeholder="Your phone number" required>
-    </div>
+    <label for="department">Department</label>
+    <select id="department" name="department" required>
+      <option value="">--Select Department--</option>
+      <option value="general">General Medicine</option>
+      <option value="cardiology">Cardiology</option>
+      <option value="orthopedics">Orthopedics</option>
+      <option value="neurology">Neurology</option>
+      <option value="pediatrics">Pediatrics</option>
+    </select>
 
-    <div class="form-group">
-      <label for="date">Preferred Date:</label>
-      <input type="date" id="date" required>
-    </div>
+    <label for="doctor">Preferred Doctor</label>
+    <input type="text" id="doctor" name="doctor" placeholder="Optional">
 
-    <div class="form-group">
-      <label for="time">Preferred Time:</label>
-      <input type="time" id="time" required>
-    </div>
+    <label for="date">Preferred Date</label>
+    <input type="date" id="date" name="date" required>
 
-    <div class="form-group">
-      <label for="message">Message (optional):</label>
-      <textarea id="message" placeholder="Any symptoms or questions?"></textarea>
-    </div>
+    <label for="time">Preferred Time</label>
+    <input type="time" id="time" name="time" required>
 
-    <div class="form-group">
-      <button type="submit">Book Appointment</button>
-    </div>
+    <label for="message">Additional Message</label>
+    <textarea id="message" name="message" rows="4" placeholder="Describe your concern or symptoms..."></textarea>
+
+    <button type="submit">Book Appointment</button>
   </form>
+</div>
 
 </body>
 </html>
