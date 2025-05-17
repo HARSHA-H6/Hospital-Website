@@ -8,13 +8,18 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-    ></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <style>
       body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         background: linear-gradient(135deg, #d1e0e0, #ffffff);
         margin: 0;
         padding: 0;
@@ -185,10 +190,40 @@
         font-size: 16px;
         color: #333;
       }
+      .footer {
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(95, 95, 153);
+        padding: 20px;
+        color: white;
+      }
+
+      .footer-section {
+        flex: 1;
+        padding: 10px;
+      }
+
+      .footer a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .fa {
+        padding: 10px;
+        font-size: 20px;
+        color: #333;
+      }
+
+      .fa:hover {
+        color: #007bff;
+      }
+      li {
+        list-style: none;
+      }
     </style>
     <script>
       function toggleSidebar() {
-        document.querySelector('.sidebar').classList.toggle('collapsed');
+        document.querySelector(".sidebar").classList.toggle("collapsed");
       }
     </script>
   </head>
@@ -211,38 +246,68 @@
 
     <div class="main-content">
       <div class="sidebar">
-        <button class="sidebar-toggle" onclick="toggleSidebar()">Our Services</button>
+        <button class="sidebar-toggle" onclick="toggleSidebar()">
+          Our Services
+        </button>
         <ul>
-            <li>Core Medical Services</li>
-            <li>Diagnostic & Laboratory Services</li>
-            <li>Specialized Clinical Services</li>
-            <li>Preventive & Community Health Services</li>
-            <li>Supportive & Rehabilitation Services</li>
-        </ul>  
-        <img src="https://media.istockphoto.com/id/1624291952/vector/medical-health-logo-design-illustration.jpg?s=612x612&w=0&k=20&c=RdOq1SRcWwS_12_c5Zg2_QOUz1GD-YwGvfRodtOPN5w=" alt=""
-        width="150px",height="100px" 
-        border-radius: 100%
-  >
+          <li>Core Medical Services</li>
+          <li>Diagnostic & Laboratory Services</li>
+          <li>Specialized Clinical Services</li>
+          <li>Preventive & Community Health Services</li>
+          <li>Supportive & Rehabilitation Services</li>
+        </ul>
+        <img
+          src="https://media.istockphoto.com/id/1624291952/vector/medical-health-logo-design-illustration.jpg?s=612x612&w=0&k=20&c=RdOq1SRcWwS_12_c5Zg2_QOUz1GD-YwGvfRodtOPN5w="
+          alt=""
+          width="150px"
+          ,height="100px"
+          border-radius:
+          100%
+        />
       </div>
 
       <div class="carousel-container">
-        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div
+          id="carouselExample"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3" class="d-block w-100" alt="...">
+              <img
+                src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
             <div class="carousel-item">
-              <img src="https://media.istockphoto.com/id/1139755582/photo/medical-equipment-on-the-background-of-group-of-health-workers-in-the-icu.jpg" class="d-block w-100" alt="...">
+              <img
+              src=https://images.unsplash.com/photo-1517120026326-d87759a7b63b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhvc3BpdGFsfGVufDB8fDB8fHww"
+              class="d-block w-100" alt="..." />
             </div>
             <div class="carousel-item">
-              <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136" class="d-block w-100" alt="...">
+              <img
+                src="https://images.unsplash.com/photo-1551601651-2a8555f1a136"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -256,36 +321,88 @@
         <div class="feature-box">
           <i class="fas fa-user-md"></i>
           <h4>Expert Doctors</h4>
-          <p>Our doctors are among the best in the world with years of experience.</p>
+          <p>
+            Our doctors are among the best in the world with years of
+            experience.
+          </p>
         </div>
         <div class="feature-box">
           <i class="fas fa-ambulance"></i>
           <h4>Emergency Care</h4>
-          <p>24/7 emergency response with high-tech ambulances and trained staff.</p>
+          <p>
+            24/7 emergency response with high-tech ambulances and trained staff.
+          </p>
         </div>
         <div class="feature-box">
           <i class="fas fa-stethoscope"></i>
           <h4>Advanced Diagnostics</h4>
-          <p>State-of-the-art diagnostic labs equipped with modern technologies.</p>
+          <p>
+            State-of-the-art diagnostic labs equipped with modern technologies.
+          </p>
         </div>
         <div class="feature-box">
           <i class="fas fa-heartbeat"></i>
           <h4>Cardiology</h4>
-          <p>Comprehensive heart care services from preventive to surgical treatments.</p>
+          <p>
+            Comprehensive heart care services from preventive to surgical
+            treatments.
+          </p>
         </div>
         <div class="feature-box">
           <i class="fas fa-clinic-medical"></i>
           <h4>Outpatient Clinics</h4>
-          <p>Well-equipped outpatient departments for quick and effective consultation.</p>
+          <p>
+            Well-equipped outpatient departments for quick and effective
+            consultation.
+          </p>
         </div>
       </div>
     </div>
 
     <div class="about-section">
       <h2>About Our Company</h2>
-      <p>VitalCare Hospital is committed to providing exceptional healthcare services through innovation, compassion, and excellence. Our facilities are equipped with cutting-edge technologies, and our staff includes the most experienced professionals in the industry.</p>
+      <p>
+        VitalCare Hospital is committed to providing exceptional healthcare
+        services through innovation, compassion, and excellence. Our facilities
+        are equipped with cutting-edge technologies, and our staff includes the
+        most experienced professionals in the industry.
+      </p>
       <h2>Future Plans</h2>
-      <p>In the future, we plan to expand our services across multiple cities and introduce AI-assisted diagnostics, robotic surgery, and more personalized patient care systems. We aim to be a leader in digital health transformation and offer accessible healthcare for all.</p>
+      <p>
+        In the future, we plan to expand our services across multiple cities and
+        introduce AI-assisted diagnostics, robotic surgery, and more
+        personalized patient care systems. We aim to be a leader in digital
+        health transformation and offer accessible healthcare for all.
+      </p>
     </div>
+    <footer class="footer">
+      <div class="footer-section contact-info">
+        <h3>VitalCare Hospital</h3>
+        <p>📞 +91 8501850389</p>
+        <p>
+          📧
+          <a href="mailto:vitalcareclinic@vitalcareclinic.org">
+            vitalcareclinic@vitalcareclinic.org
+          </a>
+        </p>
+      </div>
+
+      <div class="footer-section social-media">
+        <h3>Follow Us</h3>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+      </div>
+
+      <div class="footer-section specialities">
+        <h3>Specialities</h3>
+
+        <li>General Medicine</li>
+        <li>Cardiology</li>
+        <li>Orthopedics</li>
+        <li>Neurology</li>
+        <li>Pediatrics</li>
+      </div>
+    </footer>
   </body>
 </html>
