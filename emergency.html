@@ -2,40 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Emergency Page</title>
+  <title>Emergency Help Center</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #fff3f3;
-      color: #333;
+      background: url('https://images.unsplash.com/photo-1581090700227-1e8e931f1f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
     }
 
     header {
-      background-color: #b71c1c;
+      background-color: rgba(183, 28, 28, 0.85);
       color: white;
       text-align: center;
-      padding: 40px 20px;
+      padding: 60px 20px;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 3em;
     }
 
     header p {
-      font-size: 1.2em;
-      margin-top: 10px;
+      font-size: 1.4em;
+      margin-top: 15px;
     }
 
     .emergency-number {
-      background-color: #ffcdd2;
+      background-color: rgba(255, 205, 210, 0.9);
       color: #b71c1c;
       text-align: center;
       padding: 30px 20px;
-      font-size: 1.8em;
+      font-size: 2em;
       font-weight: bold;
-      border-top: 5px solid #d32f2f;
+      border-top: 5px solid #7bd01f;
       border-bottom: 5px solid #d32f2f;
       margin: 40px 0;
     }
@@ -45,24 +46,45 @@
       margin: auto;
       padding: 20px;
       text-align: center;
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 8px;
+      color: #333;
     }
 
     .quotes h2 {
-      color: #d32f2f;
+      color: #b22626;
     }
 
     .quote {
       background-color: white;
       margin: 20px auto;
       padding: 20px;
-      border-left: 6px solid #d32f2f;
+      border-left: 6px solid #25a3bc;
       font-style: italic;
       font-size: 1.2em;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
 
+    .slideshow-container {
+      max-width: 800px;
+      margin: 40px auto;
+      position: relative;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .slide {
+      display: none;
+      width: 100%;
+    }
+
+    .slide img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
     footer {
-      background-color: #b71c1c;
+      background-color: rgba(21, 159, 197, 0.9);
       color: white;
       text-align: center;
       padding: 15px;
@@ -79,6 +101,18 @@
 
   <div class="emergency-number">
     🚨 EMERGENCY NUMBER: +1-800-911-HELP (4357) 🚨
+  </div>
+
+  <div class="slideshow-container">
+    <div class="slide">
+      <img src="https://images.unsplash.com/photo-1581093588401-fbb7ba3cdd6f" alt="Emergency Response">
+    </div>
+    <div class="slide">
+      <img src="https://images.unsplash.com/photo-1581090701513-0e0d8c8b1f8d" alt="Paramedics in Action">
+    </div>
+    <div class="slide">
+      <img src="https://images.unsplash.com/photo-1581092919531-6ccf36c5e58e" alt="Hospital Care">
+    </div>
   </div>
 
   <div class="quotes">
@@ -100,6 +134,22 @@
   <footer>
     &copy; 2025 Emergency Services | Powered by Care & Courage
   </footer>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let slides = document.getElementsByClassName("slide");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 4000); // Change image every 4 seconds
+    }
+  </script>
 
 </body>
 </html>
